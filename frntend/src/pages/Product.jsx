@@ -214,10 +214,12 @@ export const Product = () => {
           }}
         >
           ENERGY
-        </div>
+        </div  >
+          {/* <div className="" > */}
         <Link to={"/booking"}>
         <button className="absolute   sm:top-[11%] sm:left-[45%] sm:text-[0.5rem] md:text-[0.9] md:top-[18%]  lg:text-[1rem]  lg:left-[48%] lg:top-[18%]   bg-black font-semibold py-3 px-5 rounded  text-white">Buy Now</button>
         </Link>
+        {/* </div> */}
       </div>
 
 
