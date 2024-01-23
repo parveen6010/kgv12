@@ -22,11 +22,11 @@ export const instance = new Razorpay({
 
 const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname1, "Frontend", "build")));
+  app.use(express.static(path.join(__dirname1, "frntend", "build")));
 
   app.get("*", (req, res) => {
     console.log("ok");
-    res.sendFile(path.resolve(__dirname1, "Frontend", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname1, "frntend", "build", "index.html"));
   });
 } else {
     app.get('/', (req, res) => {
