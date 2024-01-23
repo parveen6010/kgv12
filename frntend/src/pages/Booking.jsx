@@ -47,7 +47,7 @@ export const Booking = () => {
     }
     e.preventDefault()
     try {
-      const response = await axios.post("http://localhost:5000/vistuser", {
+      const response = await axios.post("/vistuser", {
         firstname,
         lastname,
         email,
@@ -77,8 +77,8 @@ export const Booking = () => {
 
   
 
-     const {data:{key}} = await axios.get("http://localhost:5000/api/getkey")
-    const { data:{order}} = await axios.post("http://localhost:5000/api/checkout", {amount
+     const {data:{key}} = await axios.get("/api/getkey")
+    const { data:{order}} = await axios.post("/api/checkout", {amount
     })
 
   const options = {
@@ -89,7 +89,7 @@ export const Booking = () => {
     description: "Test Transaction",
     image: "",
     order_id: order.id, 
-    callback_url: "http://localhost:5000/api/paymentverification",
+    callback_url: "/api/paymentverification",
     "prefill":{
       "email": email,
       "firstname" :firstname,
