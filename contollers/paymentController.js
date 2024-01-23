@@ -140,7 +140,7 @@ export const paymentVerification = async (req, res) => {
                   
                  deleteVistuserByEmail(email);
             res.redirect(
-            `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+            `http://localhost:5000/paymentsuccess?reference=${razorpay_payment_id}`
             );
             } else {
 
