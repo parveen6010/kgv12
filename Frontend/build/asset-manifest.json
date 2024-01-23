@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.894446b7.css",
+    "main.js": "/static/js/main.f4124125.js",
+    "static/js/787.219025fc.chunk.js": "/static/js/787.219025fc.chunk.js",
+    "static/media/wave_final.png": "/static/media/wave_final.fc78140eae77548db657.png",
+    "static/media/kgvLogo.png": "/static/media/kgvLogo.46a2250d38f15f959e5e.png",
+    "static/media/splendor.png": "/static/media/splendor.1c256c5ea539f2201bc1.png",
+    "static/media/golden_wave.png": "/static/media/golden_wave.9c303c41ada7b857baf9.png",
+    "static/media/bike1.jpg": "/static/media/bike1.cfe6019da03344812ea6.jpg",
+    "static/media/bike2.jpg": "/static/media/bike2.1b9b4c8d8a296c61d0e7.jpg",
+    "static/media/bike3.jpg": "/static/media/bike3.4dfaf39b26e48e5e7063.jpg",
+    "static/media/bike4.jpg": "/static/media/bike4.dde5e175a2ef50a65d9b.jpg",
+    "static/media/bike_back.jpeg": "/static/media/bike_back.37bf08b7ecbbce761d7b.jpeg",
+    "static/media/news_clipping.jpeg": "/static/media/news_clipping.09779cd6b31c16be8a78.jpeg",
+    "static/media/bike_right.jpeg": "/static/media/bike_right.b1a60aae6c8f594bf5a9.jpeg",
+    "static/media/bike_top.jpeg": "/static/media/bike_top.c46da7ec9a67d5c22dac.jpeg",
+    "static/media/bike_left.jpeg": "/static/media/bike_left.fa8807acfaf6519ea958.jpeg",
+    "static/media/compare_list.png": "/static/media/compare_list.a197324db3007edda37c.png",
+    "static/media/bike_main.png": "/static/media/bike_main.f3a8ca3e8d9e73ce8ca1.png",
+    "static/media/qr.png": "/static/media/qr.647d776011c7b812dc31.png",
+    "static/media/logokgv.jpg": "/static/media/logokgv.cb6e50d56b55ae361cd7.jpg",
+    "index.html": "/index.html",
+    "main.894446b7.css.map": "/static/css/main.894446b7.css.map",
+    "main.f4124125.js.map": "/static/js/main.f4124125.js.map",
+    "787.219025fc.chunk.js.map": "/static/js/787.219025fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.894446b7.css",
+    "static/js/main.f4124125.js"
+  ]
+}
