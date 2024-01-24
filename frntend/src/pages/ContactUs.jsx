@@ -11,6 +11,7 @@ import { FaUser } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
+// import nodemailer from "nodemailer";
 
  export const ContactUs=()=> {
   
@@ -54,6 +55,7 @@ import axios from "axios"
   
       if (response.status === 200) {
         console.log("Query submitted successfully!");
+        
         tostershow();
       } else {
         console.error("Failed to submit query.");

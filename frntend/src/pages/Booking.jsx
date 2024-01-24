@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SplendorBike from "../resource/splendor.png";
 import bike5 from '../resource/bike_main.png';
 
+
 export const Booking = () => {
   // student or instructor
 

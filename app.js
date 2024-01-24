@@ -8,6 +8,7 @@ import nodemailer from "nodemailer"; // Import nodemailer
 import { Vistuser } from "./models/visituser.js";
 import cors from "cors";
 
+
 config({ path: "./config/config.env" });
 export const app = express();
 
