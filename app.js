@@ -45,13 +45,13 @@ app.post("/register", async (req, resp) => {
     function sendEmailNotification(formData) {
       const { email } = formData;
       const transporter = nodemailer.createTransport({
-        host: "smtpout.secureserver.net",
+        host: process.env.host,
         secure: false,
-        port: 465,
-        service:" GoDaddy",
+        port: process.env.port,
+        service:process.env.service,
         auth: {
-          user: "team@kgvl.co.in",
-          pass: "Team@12345",
+          user: process.env.user,
+          pass: process.env.pass,
         },
       });
       

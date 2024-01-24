@@ -80,16 +80,15 @@ export const paymentVerification = async (req, res) => {
 
                 function sendEmailNotification() {
                   const transporter = nodemailer.createTransport({
-                    host: "smtpout.secureserver.net",
+                    host: process.env.host,
                     secure: false,
-                    port: 465,
-                    service:" GoDaddy",
+                    port: process.env.port,
+                    service:process.env.service,
                     auth: {
-                      user: "team@kgvl.co.in", // Update with your Gmail address
-                      pass: "Team@12345", // Update with your Gmail password
+                      user: process.env.user,
+                      pass: process.env.pass,
                     },
                   });
-                
                   
                    
                     const mailOptions = {
