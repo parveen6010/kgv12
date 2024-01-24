@@ -152,8 +152,8 @@ app.post("/register", async (req, resp) => {
 
 // Function to send email notification
 
-function sendEmailNotification(formData) {
-  const transporter = nodemailer.createTransport({
+     function sendEmailNotification(formData) {
+    const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
