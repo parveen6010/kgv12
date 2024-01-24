@@ -56,6 +56,7 @@ import axios from "axios"
       if (response.status === 200) {
         console.log("Query submitted successfully!");
         
+       
         tostershow();
       } else {
         console.error("Failed to submit query.");
