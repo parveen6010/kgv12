@@ -79,16 +79,26 @@ export const paymentVerification = async (req, res) => {
 
 
                 function sendEmailNotification() {
+                  
+                  // const transporter = nodemailer.createTransport({
+                  //   host: process.env.host,
+                  //   secure: false,
+                  //   port: process.env.port,
+                  //   service:process.env.service,
+                  //   auth: {
+                  //     user: process.env.user,
+                  //     pass: process.env.pass,
+                  //   },
+                  // });
+
                   const transporter = nodemailer.createTransport({
-                    host: process.env.host,
-                    secure: false,
-                    port: process.env.port,
-                    service:process.env.service,
+                    service: "gmail",
                     auth: {
-                      user: process.env.user,
-                      pass: process.env.pass,
+                      user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
+                      pass: "davajvjvmpyfjlri", // Update with your Gmail password
                     },
                   });
+
                   
                    
                     const mailOptions = {

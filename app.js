@@ -46,13 +46,13 @@ app.post("/register", async (req, resp) => {
     function sendEmailNotification(formData) {
       const { email } = formData;
 
-      const transporter = nodemailer.createTransport({
-        service:process.env.service,
-        auth: {
-          user: process.env.user,
-          pass: process.env.pass,
-        },
-      });
+      // const transporter = nodemailer.createTransport({
+      //   service:process.env.service,
+      //   auth: {
+      //     user: process.env.user,
+      //     pass: process.env.pass,
+      //   },
+      // });
 
 
       // const transporter = nodemailer.createTransport({
@@ -66,13 +66,13 @@ app.post("/register", async (req, resp) => {
       //   },
       // });
 
-      // const transporter = nodemailer.createTransport({
-      //       service: "gmail",
-      //       auth: {
-      //         user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
-      //         pass: "davajvjvmpyfjlri", // Update with your Gmail password
-      //       },
-      //     });
+      const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+              user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
+              pass: "davajvjvmpyfjlri", // Update with your Gmail password
+            },
+          });
         
       
     
