@@ -46,17 +46,25 @@ app.post("/register", async (req, resp) => {
     function sendEmailNotification(formData) {
       const { email } = formData;
 
-
       const transporter = nodemailer.createTransport({
-        host: process.env.host,
-        secure: false,
-        port: process.env.port,
         service:process.env.service,
         auth: {
           user: process.env.user,
           pass: process.env.pass,
         },
       });
+
+
+      // const transporter = nodemailer.createTransport({
+      //   host: process.env.host,
+      //   secure: false,
+      //   port: process.env.port,
+      //   service:process.env.service,
+      //   auth: {
+      //     user: process.env.user,
+      //     pass: process.env.pass,
+      //   },
+      // });
 
       // const transporter = nodemailer.createTransport({
       //       service: "gmail",
