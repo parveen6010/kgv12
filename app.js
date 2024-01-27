@@ -55,24 +55,24 @@ app.post("/register", async (req, resp) => {
       // });
 
 
-      // const transporter = nodemailer.createTransport({
-      //   host: process.env.host,
-      //   secure: false,
-      //   port: process.env.port,
-      //   service:process.env.service,
-      //   auth: {
-      //     user: process.env.user,
-      //     pass: process.env.pass,
-      //   },
-      // });
-
       const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: {
-              user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
-              pass: "davajvjvmpyfjlri", // Update with your Gmail password
-            },
-          });
+        host: process.env.host,
+        secure: false,
+        port: process.env.port,
+        service:process.env.service,
+        auth: {
+          user: process.env.user,
+          pass: process.env.pass,
+        },
+      });
+
+      // const transporter = nodemailer.createTransport({
+      //       service: "gmail",
+      //       auth: {
+      //         user: "parveenprajapati9310@gmail.com", // Update with your Gmail address
+      //         pass: "davajvjvmpyfjlri", // Update with your Gmail password
+      //       },
+      //     });
         
       
     

@@ -289,7 +289,7 @@ export const Booking = () => {
           value={selectedAmount}
           onChange={handleAmountChange}
         >
-          <option value={10000}>₹10,000</option>
+          <option value={1}>₹1</option>
           <option value={50000}>₹50,000</option>
         </select>
       </div>
