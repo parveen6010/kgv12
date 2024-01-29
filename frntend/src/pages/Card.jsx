@@ -4,9 +4,9 @@ import { Button, Image, Text, VStack } from '@chakra-ui/react';
 const Card = ({ amount, img, checkoutHandler }) => {
   return (
     <VStack>
-       <div className='flex'>
-      <Text className='p-1' >{amount}</Text>
-      <Button onClick={()=>checkoutHandler(amount)}>Buy Now</Button>
+       <div className='flex items-center justify-between gap-2'>
+      <Text className='p-1 text-white font-semibold text-sm' >{amount}</Text>
+      <Button onClick={()=>checkoutHandler(amount)} className='text-black font-bold text-xl'>Buy Now</Button>
       </div>
     </VStack>
   );

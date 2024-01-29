@@ -11,7 +11,6 @@ import { FaUser } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
-// import nodemailer from "nodemailer";
 
  export const ContactUs=()=> {
   
@@ -38,7 +37,8 @@ import axios from "axios"
       [e.target.name]: e.target.value,
     }))
   }
-  // https://backendkgv.vercel.app/
+  // /
+  ///
  // http://localhost:5000/register
   // Handle Form Submission
   const handleOnSubmit = async (e) => {
@@ -54,9 +54,8 @@ import axios from "axios"
       });
   
       if (response.status === 200) {
+        console.log(response);
         console.log("Query submitted successfully!");
-        
-       
         tostershow();
       } else {
         console.error("Failed to submit query.");
@@ -96,21 +95,21 @@ import axios from "axios"
 
 
   return (
-    <div className="w-full overflow-hidden    relative  ">
+    <div className=" overflow-hidden relative  ">
          <img src={wave} className="absolute -z-10 " loading="lazy"/>
 
-    <div className="flex-col  items-center  mx-auto max-w-[1204px] w-11/12">
+    <div className="flex-col  items-center  mx-auto w-11/12">
 
      
-    <div class="flex   items-center justify-center py-10 rounded-lg bg-black bg-opacity-10    font-inter w-[90%]  mx-auto mt-14  px-20  ">
+    <div class="flex  items-center justify-center py-10 rounded-lg bg-black bg-opacity-10    font-inter w-full   mx-auto mt-14 px-10 ">
          {/* Form */}
          <form
             onSubmit={handleOnSubmit}
-            className="flex flex-col h-full  gap-y-4 w-full  font-inter  "
+            className="flex flex-col h-full  gap-y-4 font-inter"
           >
-            <div className="  lg:flex w-full justify-center gap-9    ">
+            <div className="  sm:flex  justify-center gap-9    ">
               <div className="flex flex-col">
-                <div className="flex gap-x-4">
+                <div className="flex min-[320px]:flex-col sm:flex-row gap-x-4">
                   <label className="mb-[1rem]">
                     <p className="mb-1 text-[0.875rem] font-semibold leading-[1.375rem] black">
                       First Name <sup className="text-pink-200">*</sup>
@@ -214,7 +213,7 @@ import axios from "axios"
                     style={{
                       boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                     }}
-                    className="w-full h-56      rounded-[0.5rem]  p-[12px]  text-black outline-none"
+                    className="w-[95%] sm:h-[38vh]      rounded-[0.5rem]  p-[12px]  text-black outline-none"
                   />
                 </label>
               </div>
@@ -223,7 +222,7 @@ import axios from "axios"
               {" "}
               <button
                 type="submit"
-                className="mt-6  rounded-[8px] bg-[#3EC70B] p-1 py-[12px] px-[14px] font-medium text-white"
+                className=" md:text-[60%] sm:text-[60%] py-3 px-5 rounded-md bg-[#57E226] font-inter font-semibold  min-[320px]:text-[70%]  sm:py-3 sm:px-5"
                 onClick={handleOnSubmit} 
               >
                 Raise A Query

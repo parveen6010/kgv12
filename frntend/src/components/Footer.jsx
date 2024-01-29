@@ -7,17 +7,15 @@ import { Link } from 'react-router-dom'
 export const Footer = () => {
   return (
     <div className='w-screen bg-black pl-20 pr-8 pt-16 pb-16'>
-    <div className='w-11/12 max-w-[1240px]   flex justify-between'>
-    <div ><Link to={"/"}><img src={logo} className='w-[60px] h-[60px]'/></Link></div>
-          <div className='flex justify-center items-center  gap-10 h-28 mb-8 ' >
+    <div className='w-11/12 max-w-[1240px] flex  min-[320px]:flex-col sm:flex-row  items-center  justify-between gap-5 '>
+    <div className='min-[320px]:w-full sm:w-1/3  flex items-center justify-center mb-5'><Link to={"/"}><img src={logo} className='w-[60px] h-[60px]'/></Link></div>
+          <div className='w-2/3 flex justify-center sm:items-center  min-[320px]:flex-col sm:flex-row gap-5 min-[320px]:mb-5 sm:mb-2' >
+            <div className='flex  justify-center sm:items-center  gap-10 h-28 mr-5'>
              {/* col1 */}
               <div className='text-white '>
                 <div className='font-semibold  '>Home</div>
                 <Link to="/booking" ><div>Book Now</div></Link>
                 <Link to="/contactUs">Get In Touch</Link>
-              
-                
-                
               </div>
 
               {/* col2 */}
@@ -33,9 +31,9 @@ export const Footer = () => {
                 <Link to={"/"}>About us</Link>
                 <div>Careers</div>
               </div>
-
+              </div>
               {/* col4 -> buttons*/}
-              <div className='flex-col items-center justify-center  gap-10 '>
+              <div className='flex min-[320px]:flex-row sm:flex-col items-center justify-center  gap-10 '>
                 <Button2/>
               </div>
           </div>
