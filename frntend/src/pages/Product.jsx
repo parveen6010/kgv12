@@ -200,13 +200,13 @@ export const Product = () => {
         className=" md:h-[700px] bike-firstpage flex flex-col items-center justify-center  h-screen w-screen bg-gradient-radial from-[rgba(0,0,0,0.75)] via-gray-400 to-[rgba(0,0,0,0.75)]"
 
       >
-        <h1 className="lg:pr-[20px] lg:scale-[1.2]  md:text-1/2 experince-text text-4xl font-extrabold absolute top-40 font-serif" style={{ fontFamily: 'Anybody' }}>Experience the power of future..</h1>
+        <h1 className="min-[300px]:postion-relative min-[300px]:right-[30px]  min-[300px]:text-md min-[300px]:text-center  lg:pr-[20px] lg:scale-[1.2]  md:text-1/2 experince-text lg:text-4xl font-extrabold absolute top-40 font-serif" style={{ fontFamily: 'Anybody' }}>Experience the power of future..</h1>
         <img
           src={bike5}
-          className="lg:postion-relative lg:left-[270px] hover:lg:scale-[1.2] md:pt-[100px] md:pl-[14%]  md:scale-[0.8] md:left-[-0.1%] bikeimg absolute top-[4%] left-[25%] scale-75 hover:scale-100 transition-all duration-500 z-20    "
+          className=" min-[300px]:scale-[0.5] lg:postion-relative lg:left-[270px] hover:lg:scale-[1.2] md:pt-[100px] md:pl-[14%]  md:scale-[0.8] md:left-[-0.1%] bikeimg absolute top-[4%] left-[25%]  lg:scale-75 hover:scale-100 transition-all duration-500 z-20    "
         />
         <div
-          className=" sm:scale-[0.5] lg:scale-[1] md:scale-[0.7] Energyclass uppercase  font-extrabold text-transparent  text-[17rem] tracking-widest  bg-clip-text  bg-gradient-to-r from-[#56e422c4] via-[#56e422c4] to-[#56e422c4] bg-opacity-20 text_properties"
+          className=" min-[300px]:scale-[0.3] sm:scale-[0.5] lg:scale-[1] md:scale-[0.7] Energyclass uppercase  font-extrabold text-transparent  text-[17rem] tracking-widest  bg-clip-text  bg-gradient-to-r from-[#56e422c4] via-[#56e422c4] to-[#56e422c4] bg-opacity-20 text_properties"
           style={{
             WebkitTextFillColor: "transparent",
             WebkitTextStrokeWidth: "2px",
@@ -217,7 +217,7 @@ export const Product = () => {
         </div  >
           {/* <div className="" > */}
         <Link to={"/booking"}>
-        <button className="absolute   sm:top-[11%] sm:left-[45%] sm:text-[0.5rem] md:text-[0.9] md:top-[18%]  lg:text-[1rem]  lg:left-[48%] lg:top-[18%]   bg-black font-semibold py-3 px-5 rounded  text-white">Buy Now</button>
+        <button className=" min-[300px]:scale-[0.5] absolute   sm:top-[11%] sm:left-[45%] sm:text-[0.5rem] md:text-[0.9] md:top-[18%]  lg:text-[1rem]  lg:left-[48%] lg:top-[18%]   bg-black font-semibold py-3 px-5 rounded  text-white">Buy Now</button>
         </Link>
         {/* </div> */}
       </div>
